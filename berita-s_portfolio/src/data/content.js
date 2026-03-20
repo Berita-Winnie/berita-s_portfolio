@@ -20,7 +20,7 @@ export const navLinks = [
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
   { label: 'Services', href: '#services' },
-  { label: 'Contsct', href: '#contact' },
+  { label: 'Contact', href: '#contact' },
 ]
 
 export const frontendskills = [
