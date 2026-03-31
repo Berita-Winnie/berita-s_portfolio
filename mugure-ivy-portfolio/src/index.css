@@ -1,1 +1,73 @@
-@import 'taiwindcss';
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Outfit', system-ui, sans-serif;
+
+  /* Warm canvas (not stark clinical white */
+  --color-canvas: #fcfcfa;
+  --color-stone-pale: #f7f6f3;
+
+  /* Muted baby blue - (dusty, not hospital blue )*/
+  --color-baby-50: #f4f9fb;
+  --color-baby-100: #e8f2f7;
+  --color-baby-200: #d2e5ef;
+  --color-baby-300: #b5d3e3;
+  --color-baby-400: #94bacd;
+  --color-baby-500: #7aa3b8;
+
+  /* Soft sage (botanical, quiet) */
+  --color-sage-50: #f6f8f5;
+  --color-sage-100: #eaefe8;
+  --color-sage-200: #d8e0d4;
+  --color-sage-300: #b9c7b2;
+  --color-sage-400: #9aad92;
+  --color-sage-500: #7d9176;
+
+  /* pale mint and aqua */
+
+  --color-mint-50: #f5faf8;
+  --color-mint-100: #e8f3ef;
+  --color-mint-200: #d0e8df;
+  --color-mint-300: #a8d4c4;
+  --color-mint-400: #85b8a8;
+  --color-mint-500: #6b9d8e;
+
+  --color-aqua-50: #f3faf9;
+  --color-aqua-100: #e2f4f1;
+  --color-mint-200: #c9ebe5;
+
+  /* Soft teal accent  */
+
+  --color-teal-50: #f4f8f6;
+  --color-teal-100: #e6efe9;
+  --color-teal-200: #cddfd4;
+  --color-teal-300: #a8c4b4;
+  --color-teal-400: #85a894;
+  --color-teal-500: #6d8f7c;
+  --color-teal-600: #5a7768;
+
+  /* Whisper Shadows */
+  --shadow-soft:
+    0 24px 48px -28px rgb(90 119 104 / 0.08),
+    0 12px 24px -16px rgb(122 163 184 / 0.06);
+  --shadow-card:
+    0 1px 2px rgb(90 119 104 / 0.04), 0 8px 28px -12px rgb(90 119 104 / 0.07);
+  --shadow-hover:
+    0 4px 12px rgb(90 119 104 / 0.06), 0 20px 40px -20px rgb(122 163 184 / 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-canvas text-stone-600 antialiased font-sans;
+    font-feature-settings:
+      'kern' 1,
+      'liga' 1;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+}
