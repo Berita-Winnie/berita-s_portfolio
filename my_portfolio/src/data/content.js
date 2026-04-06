@@ -17,7 +17,7 @@ export const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
-/** Core skills shown in Skills + Sample work (grouped for clarity; medical VA focus). */
+/** Core skills shown in Skills + Sample work (grouped for clarity; VA focus). */
 export const primarySkills = [
   {
     name: "Office & productivity",

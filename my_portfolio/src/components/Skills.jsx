@@ -24,7 +24,7 @@ function Skills() {
     >
       <SectionHeading
         eyebrow="Skills"
-        title="Focused support for medical teams."
+        title="Focused support for busy teams."
         description="A concise set of strengths—organized for quick scanning, not noise."
       />
 
