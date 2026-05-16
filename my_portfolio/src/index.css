@@ -38,6 +38,10 @@ html {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+
+  .drift-slow {
+    animation: none !important;
+  }
 }
 
 body {
@@ -72,6 +76,20 @@ body {
 
 main {
   animation: main-enter 0.5s ease-out forwards;
+}
+
+@keyframes drift-slow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -3px, 0);
+  }
+}
+
+.drift-slow {
+  animation: drift-slow 14s ease-in-out infinite;
 }
 
 main > section {

@@ -5,98 +5,153 @@ import {
   LayoutGrid,
   Linkedin,
   Mail,
-  Search,
-  Shield,
+  Plane,
+  Receipt,
+  Users,
 } from "lucide-react";
 
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
-  { label: "Samples", href: "#va-samples" },
+  { label: "Support Systems", href: "#support-systems" },
   { label: "Services", href: "#services" },
   { label: "Contact", href: "#contact" },
 ];
 
-/** Core skills shown in Skills + Sample work (grouped for clarity; VA focus). */
+/** Core competencies for Skills section. */
 export const primarySkills = [
+  { name: "Inbox management", icon: Mail },
+  { name: "Calendar management", icon: CalendarClock },
+  { name: "Project coordination", icon: FolderKanban },
+  { name: "Travel planning", icon: Plane },
+  { name: "Expense tracking", icon: Receipt },
+  { name: "Administrative support", icon: Users },
+];
+
+/**
+ * Executive Support Systems — each entry is a distinct sample of operational work.
+ * sampleUrl: external link (Google Drive, Notion, etc.) when available; otherwise opens in-site showcase.
+ */
+export const executiveSupportSystems = [
   {
-    name: "Office & productivity",
-    sampleTitle: "Research & Data Organization",
-    icon: LayoutGrid,
-    sampleDescription:
-      "Deliverable: research brief with key findings and a clean, categorized data sheet.",
-    sampleImage: "/samples/sample-1-research.png",
-    sampleUrl: "#",
-  },
-  {
-    name: "Calendar & scheduling",
-    sampleTitle: "Email & Calendar Management + Scheduling & Coordination",
-    icon: CalendarClock,
-    sampleDescription:
-      "Inbox cleanup, labels, weekly planning, meetings, reminders, tracking.",
-    sampleImage: "/samples/sample-2-calendar-email.png",
-    sampleUrl: "#",
-  },
-  {
-    name: "Email & communication",
-    sampleTitle: "Workspace & Productivity Tools",
+    slug: "inbox-email",
+    name: "Inbox & email management",
+    sampleTitle: "Inbox & Email Management",
     icon: Mail,
-    sampleDescription: "Google Workspace, Microsoft Office & similar platforms.",
-    sampleImage: "/samples/sample-5-google-workspace.png",
-    sampleUrl: "#",
+    sampleDescription: "Inbox cleanup, labels, reply templates, and follow-up tracking.",
+    sampleImage: "/samples/sample-1-research.png",
+    sampleDeliverables: [
+      "Inbox triage and folders",
+      "Priority labels",
+      "Reply templates",
+      "Weekly summary",
+    ],
+    sampleUrl: "",
   },
   {
-    name: "Records & files",
-    sampleTitle: "Travel Planning & Itinerary Creation",
+    slug: "calendar-scheduling",
+    name: "Calendar & scheduling",
+    sampleTitle: "Calendar & Scheduling Coordination",
+    icon: CalendarClock,
+    sampleDescription: "Meeting scheduling, holds, confirmations, reminders, and prep.",
+    sampleImage: "/samples/sample-2-calendar-email.png",
+    sampleDeliverables: [
+      "Scheduling and confirmations",
+      "Calendar blocks",
+      "Reminder checklists",
+      "Time-zone tracker",
+    ],
+    sampleUrl: "",
+  },
+  {
+    slug: "project-coordination",
+    name: "Project coordination",
+    sampleTitle: "Project Coordination",
     icon: FolderKanban,
-    sampleDescription: "Deliverable: travel options comparison, final itinerary, and booking checklist.",
-    sampleImage: "/samples/sample-3-travel.png",
-    sampleUrl: "#",
-  },
-  {
-    name: "Research & briefs",
-    sampleTitle: "Project Management",
-    icon: Search,
-    sampleDescription: "Deliverable: project timeline, task board, owner assignments, and status updates.",
+    sampleDescription: "Task boards, timelines, assignments, and status updates.",
     sampleImage: "/samples/sample-4-project-management.png",
-    sampleUrl: "#",
+    sampleDeliverables: [
+      "Timeline and milestones",
+      "Task board",
+      "Status updates",
+      "Action log",
+    ],
+    sampleUrl: "",
   },
   {
-    name: "Privacy & confidentiality",
-    sampleTitle: "Expense Tracking",
-    icon: Shield,
-    sampleDescription: "Deliverable: monthly expense log, categorized receipts, and summary report.",
+    slug: "travel-planning",
+    name: "Travel planning",
+    sampleTitle: "Travel Planning & Itineraries",
+    icon: Plane,
+    sampleDescription: "Trip options, itineraries, booking checklists, and logistics.",
+    sampleImage: "/samples/sample-3-travel.png",
+    sampleDeliverables: [
+      "Trip options",
+      "Itinerary",
+      "Booking checklist",
+      "Expense prep",
+    ],
+    sampleUrl: "",
+  },
+  {
+    slug: "expense-tracking",
+    name: "Expense tracking",
+    sampleTitle: "Expense Tracking & Reporting",
+    icon: Receipt,
+    sampleDescription: "Expense logs, receipt categories, and summary reports.",
     sampleImage: "/samples/sample-6-expense-tracking.png",
-    sampleUrl: "#",
+    sampleDeliverables: [
+      "Expense log",
+      "Receipt categories",
+      "Summary report",
+      "Export for reimbursement",
+    ],
+    sampleUrl: "",
+  },
+  {
+    slug: "workspace-productivity",
+    name: "Workspace & productivity",
+    sampleTitle: "Workspace & Productivity Systems",
+    icon: LayoutGrid,
+    sampleDescription: "Google Workspace, Microsoft Office, and organized file structures.",
+    sampleImage: "/samples/sample-5-google-workspace.png",
+    sampleDeliverables: [
+      "Folder structure",
+      "Docs and Sheets templates",
+      "Workspace setup",
+      "SOP documentation",
+    ],
+    sampleUrl: "",
   },
 ];
 
-/** Short tags for skills merged out of the main grid; keeps the section scannable. */
 export const additionalSkillTags = [
-  "Attention to detail",
   "Meeting notes",
-  "CRM & data hygiene",
-  "SOPs & documentation",
-  "Time zone coordination",
+  "Research",
+  "SOPs",
+  "Data entry",
+  "Time zones",
 ];
 
 export const services = [
   {
-    title: "Virtual Assistant",
-    description: "Reliable day-to-day support with clear communication and practical organization.",
+    title: "Executive Virtual Assistant",
+    description: "Day-to-day business operations support for founders, CEOs, and busy professionals.",
     items: [
-      "Organization & Prioritization",
-      "Calendar & Email Management",
-      "Research",
+      "Inbox Management",
+      "Calendar Management",
+      "Project Coordination",
       "Travel Planning",
-      "Project Management",
-      "Meeting & Administrative Support",
+      "Expense Tracking",
+      "Administrative & Personal Support",
     ],
   },
 ];
 
+export const upworkUrl = "https://www.upwork.com/";
+
 export const contacts = [
   { label: "Email", value: "winrose.berita@email.com", icon: Mail, href: "mailto:winrose.berita@email.com" },
   { label: "LinkedIn", value: "linkedin.com/in/beritawinnie", icon: Linkedin, href: "https://www.linkedin.com/" },
-  { label: "Portfolio", value: "beritawinnie.dev", icon: Globe, href: "#" },
+  { label: "Upwork", value: "Invite me on Upwork", icon: Globe, href: upworkUrl },
 ];
