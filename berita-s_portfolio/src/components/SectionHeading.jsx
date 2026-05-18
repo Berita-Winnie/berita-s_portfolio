@@ -1,16 +1,14 @@
-import React from 'react'
-
-const SectionHeading = ({ eyebrow, title, description }) => {
+function SectionHeading({ eyebrow, title, description }) {
   return (
-    <div className="mb-10 md:mb-12">
-      <p className="uppercase mb-3 text-xs font-semibold tracking-[0.2em] text-[var(--accent)]">
+    <div className="mb-12 md:mb-14">
+      <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--accent)]/90">
         {eyebrow}
       </p>
-      <h2 className="max-w-3xl text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
+      <h2 className="max-w-2xl text-[1.65rem] font-medium leading-snug tracking-tight text-[var(--text)] md:text-3xl md:leading-snug">
         {title}
       </h2>
       {description ? (
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-[var(--text-muted)] ">
+        <p className="mt-4 max-w-xl text-[0.9375rem] font-normal leading-relaxed tracking-normal text-[var(--text-muted)]">
           {description}
         </p>
       ) : null}

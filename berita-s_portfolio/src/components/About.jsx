@@ -1,27 +1,29 @@
-import React from 'react'
 import SectionHeading from './SectionHeading'
-const About = () => {
+
+
+function About() {
   return (
     <section
       id="about"
-      className="relative mx-auto w-full max-w-6xl overflow-hidden px-6 py-16 lg:px-10 "
+      className="relative mx-auto w-full max-w-6xl overflow-hidden px-6 py-[var(--section-y)] lg:px-10"
     >
+      
       <SectionHeading
         eyebrow="About"
-        title="A thoughtful blend of design-minded development and organised support."
+        title="Operational support that feels steady and human."
       />
-      <div className=" grid gap-6 text-[15px] leading-relaxed text-[var(--text-muted)] md:grid-cols-2">
-        <p className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 ">
-          My journey into tech started with curiosity about how digital products
-          can feel both beautiful and useful. As I learned frontend development,
-          I became passionate about building interfaces that are clear,
-          responsive, and enjoyable to use.
+      <div className="grid gap-5 md:grid-cols-2 md:gap-6">
+        <p className="flex h-full flex-col rounded-[var(--radius-lg)] border border-[var(--line)]/90 bg-[var(--surface)] p-7 text-[0.9375rem] font-normal leading-relaxed text-[var(--text-muted)] shadow-[var(--shadow-card)] transition-all duration-300 ease-out hover:border-[var(--accent)]/20 hover:shadow-[var(--shadow-card-hover)] md:p-8">
+          I work with people who are juggling too much—managing inboxes,
+          coordinating schedules, chasing details, and keeping projects moving.
+          My role is to take that load off your plate with clear communication
+          and systems you can trust.
         </p>
-        <p className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 ">
-          Alongside that, I enjoy supporting businesses as a virtual assistant,
-          helping manage communication, scheduling, research, and documentation.
-          I love creating clean systems that reduce friction and keep people
-          focused on what matters most.
+        <p className="flex h-full flex-col rounded-[var(--radius-lg)] border border-[var(--line)]/90 bg-[var(--surface)] p-7 text-[0.9375rem] font-normal leading-relaxed text-[var(--text-muted)] shadow-[var(--shadow-card)] transition-all duration-300 ease-out hover:border-[var(--accent)]/20 hover:shadow-[var(--shadow-card-hover)] md:p-8">
+          Whether you need ongoing assistance or help getting organized for a
+          busy season, I bring patience, discretion, and a practical eye for
+          what “done” looks like. Every client relationship is built on
+          reliability and respect for your time.
         </p>
       </div>
     </section>
