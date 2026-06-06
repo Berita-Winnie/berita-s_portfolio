@@ -1,0 +1,42 @@
+export const lifeStages = [
+  {
+    id: 'puberty',
+    title: 'Puberty',
+    age: 'Often begins between ages 8–13',
+    changes: ['Breast development and body shape changes', 'Growth spurts and body hair', 'First periods (menarche) often between 9–15—wide range is normal', 'Emotional ups and downs while the brain is still developing'],
+    reassurance: 'Timing varies; comparing timelines rarely helps. Trusted adults and clinicians can answer questions without judgment.',
+    accent: 'from-peach-soft/50 to-blush/40',
+  },
+  {
+    id: 'reproductive',
+    title: 'Reproductive years',
+    age: 'Roughly teens through early 40s for many',
+    changes: ['Cycles may stabilize after adolescence but can still vary', 'Pregnancy possible whenever you ovulate—contraception and planning are personal choices', 'Stress, travel, and illness can temporarily shift cycles'],
+    reassurance: 'Tracking patterns helps you know what is typical for you—not for judging yourself.',
+    accent: 'from-lavender-mist/50 to-rose-soft/30',
+  },
+  {
+    id: 'pregnancy-awareness',
+    title: 'Pregnancy awareness basics',
+    age: 'If pregnancy is possible for you',
+    changes: ['Early signs can include missed period, nausea, breast changes—only a test or clinician confirms', 'Prenatal care supports health when pregnant', 'Loss and fertility challenges are common human experiences—support matters'],
+    reassurance: 'This app does not replace obstetric care; use trusted medical sources for pregnancy decisions.',
+    accent: 'from-sage/25 to-peach-soft/35',
+  },
+  {
+    id: 'perimenopause',
+    title: 'Perimenopause',
+    age: 'Often 40s, sometimes earlier',
+    changes: ['Cycles may shorten, lengthen, or skip', 'Hot flashes, sleep changes, mood shifts, vaginal dryness for some', 'Fertility declines but pregnancy can still occur until menopause'],
+    reassurance: 'Symptoms vary; effective treatments exist—talk with a clinician about options.',
+    accent: 'from-plum/20 to-lavender-mist/40',
+  },
+  {
+    id: 'menopause',
+    title: 'Menopause',
+    age: 'Average around 51 in many regions',
+    changes: ['Defined as 12 months without a period (not due to other causes)', 'Bone, heart, and brain health remain important', 'Some use hormone therapy or non-hormonal strategies for symptoms—individualized care is key'],
+    reassurance: 'Life after menopause can be vibrant; shame about aging has no place in good education.',
+    accent: 'from-dust-rose/25 to-plum/25',
+  },
+]

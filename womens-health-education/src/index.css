@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-display: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-family-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-parchment: #faf6f3;
+  --color-warm-white: #fffcfa;
+  --color-blush: #e8d4d8;
+  --color-rose-soft: #d4a5b0;
+  --color-dust-rose: #c49aa3;
+  --color-plum: #6b5b73;
+  --color-plum-deep: #4a3d4f;
+  --color-lavender-mist: #e4e0ed;
+  --color-peach-soft: #f0d9cf;
+  --color-sage: #9aab9e;
+  --color-sage-deep: #6d7d72;
+  --color-charcoal: #2c2629;
+
+  --shadow-soft: 0 4px 24px -4px rgb(44 38 41 / 0.08);
+  --shadow-card: 0 8px 32px -8px rgb(74 61 79 / 0.12);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+  body {
+    @apply bg-parchment text-charcoal font-sans text-[16px] leading-[1.65] text-plum;
+  }
+  .dark body {
+    @apply bg-plum-deep text-parchment;
+  }
+}

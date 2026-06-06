@@ -1,0 +1,58 @@
+export const symptoms = [
+  {
+    id: 'cramps',
+    title: 'Cramps',
+    summary: 'Uterine contractions help shed the lining; pain varies widely.',
+    cycleReasons: 'Prostaglandins trigger contractions—higher levels can mean stronger cramps for some.',
+    whenToSeek: 'Pain that stops daily activities, gets worse over time, or comes with fever or very heavy bleeding deserves medical evaluation.',
+  },
+  {
+    id: 'acne',
+    title: 'Acne',
+    summary: 'Hormonal shifts can influence oil glands and inflammation.',
+    cycleReasons: 'Many notice flares before a period when androgens are relatively more active compared with estrogen.',
+    whenToSeek: 'Painful cystic acne, scarring, or distress—dermatology or primary care can help.',
+  },
+  {
+    id: 'fatigue',
+    title: 'Fatigue',
+    summary: 'Lower energy can have many causes, including sleep, stress, iron, and thyroid issues.',
+    cycleReasons: 'Some feel tired around menstruation or in the luteal phase; heavy bleeding can contribute to iron loss over time.',
+    whenToSeek: 'Persistent exhaustion, shortness of breath, or dizziness—especially with heavy periods—warrants a check-up.',
+  },
+  {
+    id: 'bloating',
+    title: 'Bloating',
+    summary: 'Fluid retention and slower digestion can make the abdomen feel fuller.',
+    cycleReasons: 'Progesterone can affect gut motility; salt and stress play a role too.',
+    whenToSeek: 'Sudden severe swelling, pain, or new symptoms should be reviewed by a clinician.',
+  },
+  {
+    id: 'headaches',
+    title: 'Headaches',
+    summary: 'Migraine and tension headaches can track with cycle changes for some people.',
+    cycleReasons: 'Estrogen withdrawal before a period is a known migraine trigger for some.',
+    whenToSeek: 'New neurological symptoms, worst headache ever, or frequent disabling headaches need medical assessment.',
+  },
+  {
+    id: 'mood',
+    title: 'Mood changes',
+    summary: 'Irritability, sadness, or anxiety can worsen before a period for some (PMS or PMDD).',
+    cycleReasons: 'Sensitive brain response to normal hormone shifts may play a role—not weakness.',
+    whenToSeek: 'If mood disrupts relationships or work for most cycles, tell a clinician—treatments exist.',
+  },
+  {
+    id: 'breast-tenderness',
+    title: 'Tender breasts',
+    summary: 'Hormones can make breast tissue feel sore or heavy.',
+    cycleReasons: 'Common in the luteal phase; usually eases after a period starts.',
+    whenToSeek: 'New lumps, one-sided pain, skin changes, or discharge—get examined.',
+  },
+  {
+    id: 'irregular-periods',
+    title: 'Irregular periods',
+    summary: 'Cycle length can vary; “regular” is often roughly 21–35 days for adults.',
+    cycleReasons: 'Stress, weight change, PCOS, thyroid issues, and perimenopause can affect timing.',
+    whenToSeek: 'No period for 3+ months (and not pregnant), bleeding between periods, or very heavy flow—seek care.',
+  },
+]
